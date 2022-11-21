@@ -28,7 +28,7 @@ jobs:
           chmod +x generatePiImage.sh
           ./generatePiImage.sh
 
-       - uses: softprops/action-gh-latest
+      - uses: softprops/action-gh-release@v1
         with:
           files: '**/*.zip'
           body_path: release_notes.txt
